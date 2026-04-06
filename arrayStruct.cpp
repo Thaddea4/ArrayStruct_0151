@@ -21,20 +21,15 @@ struct Orang
 int main() {
     // Deklarasi variabel bertipe struct Orang
     Orang mhs;
-
     // Input data
     cout << "Nama : ";
     getline(cin, mhs.nama);          // Masukkan nama ke dalam struct
-
     cout << "Desa : ";
     getline(cin, mhs.alamat.desa);
-
     cout << "Kota : ";
     getline(cin, mhs.alamat.kota);
-
     cout << "Umur : ";
     cin >> mhs.umur;          // Masukkan umur ke dalam struct
-
     cout << endl;             // Baris baru untuk tampilan lebih rapi
 
     // Tampilkan data yang sudah diinput
