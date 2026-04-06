@@ -1,24 +1,32 @@
 #include <iostream>
 using namespace std;
 
+struct detailAlamat
+{
+    string desa;
+    string kota;
+};
 struct Orang 
 {
     string nama;
-    string alamat;
-    string umur;
+    detailAlamat alamat;
+    int umur;
 };
 
 int main() {
     Orang mhs;
     cout << "Nama : ";
     cin >> mhs.nama;
-    cout << "Alamat : ";
-    cin >> mhs.alamat;
+    cout << "Desa : ";
+    cin >> mhs.alamat.desa;
+    cout << "Kota : ";
+    cin >> mhs.alamat.kota;
     cout << "Umur : ";
     cin >> mhs.umur;
     cout << endl;
     // tampilkan
     cout << "Nama : " << mhs.nama << endl;
-    cout << "Alamat : " << mhs.alamat << endl;
+    cout << "Desa : " << mhs.alamat.desa << endl;
+    cout << "Kota : " << mhs.alamat.kota << endl;
     cout << "Umur : " << mhs.umur << endl;
 }
