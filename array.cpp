@@ -2,5 +2,7 @@
 using namespace std;
 
 
-int main() {    
+int main() {  
+    // deklarasi dengan inisialisasi
+    int aku [5] = {10,20,30,40,50};  
 }
